@@ -65,8 +65,7 @@ WAITMS ($t)
 KEYUP (#ENTER)
 KEYUP (#SHIFT)
 WAITMS ($t)
-WAITMS (1000)
 //вернуться обратно
-LCLICK(555,20)
-WAITMS($t)
+//LCLICK(555,20)
+//WAITMS($t)
 HALT
