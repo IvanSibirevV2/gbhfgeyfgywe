@@ -6,13 +6,6 @@ WHILE(iskeydown(192)=1)
 WAITMS($t)
 END_CYC
 
-WAITMS($t)
-LCLICK($_xmouse,$_ymouse)
-
-WAITMS($t)
-LCLICK(276,145)
-WAITMS($t)
-
 Scrin_In_YandexDisk()
 
 LCLICK(627,701)
