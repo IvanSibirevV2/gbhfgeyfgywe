@@ -2,6 +2,8 @@
 #name "New Script"
 //ƒелает скрин €ндеск дликом и кладет его в конец
 // заранее открытого юпитера по выставленному скриншоту
+#include "Scrin_In_YandexDisk.cms"
+
 $t=75
 
 //ждем отжати€ клавиши запуска
@@ -9,23 +11,8 @@ WHILE(iskeydown(192)=0)
 WAITMS($t)
 END_CYC
 
-KEYDOWN (#CTRL)
-WAITMS ($t)
-KEYDOWN (#SHIFT)
-WAITMS ($t)
-KEYDOWN (#1)
-WAITMS ($t)
-KEYUP (#1)
-KEYUP (#SHIFT)
-KEYUP (#CTRL)
 
-WHILE(wndfind("яндекс.ƒиск")=0)
-WAITMS($t)
-END_CYC
-
-WHILE(wndfind("яндекс.ƒиск")!0)
-WAITMS($t)
-END_CYC
+Scrin_In_YandexDisk()
 
 //клин на юпитер
 LCLICK(415,5)

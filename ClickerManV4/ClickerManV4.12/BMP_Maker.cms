@@ -1,6 +1,15 @@
 // 23.08.2023
 #name "New Script"
-#include "Scrin_In_YandexDisk"
+#include "Scrin_In_YandexDisk.cms"
+getscreen
+
+IF_PICTURE_IN (0,650, 100, 800, "screens\QWE.bmp")
+ move($_return1, $_return2)
+END_IF
+
+
+
+HALT
 $t=75
 //Пользователь делает скрин с яндекс диска
 //Копирует его в буфер обмена.
@@ -12,4 +21,3 @@ Scrin_In_YandexDisk()
 // пользователь сохраняет как 255 бмп в папку скрины.
 print("Hello, world!")
 HALT
-
