@@ -1,49 +1,37 @@
-// 22.08.2023
+// 23.08.2023
 #name "New Script"
-//Делает скрин яндеск дликом и кладет его в конец
-// заранее открытого юпитера по выставленному скриншоту
 #include "Scrin_In_YandexDisk.cms"
-
 $t=75
-
-//ждем отжатия клавиши запуска
-WHILE(iskeydown(192)=0)
+WHILE(iskeydown(192)=1)
 WAITMS($t)
 END_CYC
 
+WAITMS($t)
+LCLICK($_xmouse,$_ymouse)
+
+WAITMS($t)
+LCLICK(276,145)
+WAITMS($t)
 
 Scrin_In_YandexDisk()
 
-//клин на юпитер
-LCLICK(415,5)
+LCLICK(627,701)
+
 WAITMS($t)
-//клик на пустое поле
-LCLICK(56,421)
+LCLICK(30,214)
 WAITMS($t)
-KEYDOWN(#PAGEDOWN)
+KEYDOWN(#DELETE)
 WAITMS($t)
-KEYUP(#PAGEDOWN)
+KEYUP(#DELETE)
 WAITMS($t)
-KEYDOWN(#DOWN)
+KEYDOWN(#TAB)
 WAITMS($t)
-KEYUP(#DOWN)
+KEYUP(#TAB)
 WAITMS($t)
-//клик на добавить
-KEYDOWN(#B)
-WAITMS($t)
-KEYUP(#B)
-WAITMS($t)
-//клик на маркдаун выбрать
-KEYDOWN(#M)
-WAITMS($t)
-KEYUP(#M)
-WAITMS($t)
-//клик на редактировать
 KEYDOWN(#ENTER)
 WAITMS($t)
 KEYUP(#ENTER)
 WAITMS($t)
-//вставить
 KEYDOWN (#CTRL)
 WAITMS ($t)
 KEYDOWN (#V)
@@ -51,15 +39,9 @@ WAITMS ($t)
 KEYUP (#V)
 KEYUP (#CTRL)
 WAITMS ($t)
-//применить
-KEYDOWN (#SHIFT)
-WAITMS ($t)
-KEYDOWN (#ENTER)
-WAITMS ($t)
-KEYUP (#ENTER)
-KEYUP (#SHIFT)
-WAITMS ($t)
-//вернуться обратно
-//LCLICK(555,20)
-//WAITMS($t)
+LCLICK(280,61)
+
+
+print("Hello, world!")
 HALT
+
