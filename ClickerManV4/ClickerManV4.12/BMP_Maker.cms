@@ -8,7 +8,7 @@ END_CYC
 
 Scrin_In_YandexDisk()
 
-LCLICK(627,701)
+LCLICK(562,701)
 
 WAITMS($t)
 LCLICK(30,214)
