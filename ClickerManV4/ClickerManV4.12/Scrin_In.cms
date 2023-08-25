@@ -15,10 +15,16 @@ END_CYC
 Scrin_In_YandexDisk()
 
 //клин на юпитер
-LCLICK(415,5)
+//На ноутбуке
+//LCLICK(415,5)
+//На стационарнике
+//LCLICK(415,5)
 WAITMS($t)
 //клик на пустое поле
+//На ноутбуке
 LCLICK(56,421)
+//На стационарнике
+//LCLICK(415,5)
 WAITMS($t)
 KEYDOWN(#PAGEDOWN)
 WAITMS($t)
