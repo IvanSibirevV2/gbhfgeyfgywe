@@ -35,5 +35,12 @@ WAITMS ($t)
 LCLICK(280,61)
 
 
+//KEYDOWN(#ENTER)
+//WAITMS($t)
+//KEYUP(#ENTER)
+//WAITMS($t)
+//LCLICK(829,149)
+//WAITMS($t)
+
 print("Hello, world!")
 HALT
